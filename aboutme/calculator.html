@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
+  <title>Yereka</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+   <body>
+<!-- navbar -->
+   <div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-header">
+    <div class="nav-title">
+      <a href="../index.html">Yereka</a>
+    </div>
+  </div>
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  
+  <div class="nav-links">
+    <a href="../index.html" >About me</a>
+    <a href="contact.html" >Contact me</a>
+    <a href="register.html" >Register</a>
+    <a href="login.html" >Login</a>
+    <a href="#" >Calculator</a>
+  </div>
+</div>
+
+<!--      end of navbar -->
+
+
+     
+     <div class="wrapper">
+      <div class = title >
+        <h1>Calculator</h1>
+      </div >
+     
+      <table>
+         <tr>
+            <td colspan="3"><input type="text" class="result"/></td>
+            <!-- clr() function will call clr to clear all value -->
+            <td><input type="button" value="c" onclick="clr()" class = "button"/> </td>
+         </tr>
+         <tr>
+            <!-- create button and assign value to each button -->
+            <!-- dis("1") will call function dis to display value -->
+            <td><input type="button" value="1" onclick="dis('1')" class = "button"/> </td>
+            <td><input type="button" value="2" onclick="dis('2')" class = "button"/> </td>
+            <td><input type="button" value="3" onclick="dis('3')" class = "button"/> </td>
+            <td><input type="button" value="/" onclick="dis('/')" class = "button"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="4" onclick="dis('4')" class = "button"/> </td>
+            <td><input type="button" value="5" onclick="dis('5')" class = "button"/> </td>
+            <td><input type="button" value="6" onclick="dis('6')" class = "button"/> </td>
+            <td><input type="button" value="-" onclick="dis('-')" class = "button"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="7" onclick="dis('7')" class = "button"/> </td>
+            <td><input type="button" value="8" onclick="dis('8')" class = "button"/> </td>
+            <td><input type="button" value="9" onclick="dis('9')" class = "button"/> </td>
+            <td><input type="button" value="+" onclick="dis('+')" class = "button"/> </td>
+         </tr>
+         <tr>
+            <td><input type="button" value="." onclick="dis('.')" class = "button"/> </td>
+            <td><input type="button" value="0" onclick="dis('0')" class = "button"/> </td>
+            <!-- solve function call function solve to evaluate value -->
+            <td><input type="button" value="=" onclick="solve()" class = "button"/> </td>
+            <td><input type="button" value="*" onclick="dis('*')" class = "button"/> </td>
+         </tr>
+      </table>
+       </div>
+   </body>
+</html>
